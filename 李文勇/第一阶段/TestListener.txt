@@ -1,0 +1,39 @@
+package email;
+
+import static org.testng.Assert.assertEquals;
+
+import java.awt.List;
+
+import org.testng.ITestContext;
+import org.testng.ITestNGMethod;
+import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
+import org.testng.annotations.Test;
+
+import com.webtest.core.BaseTest;
+
+public class TestListener extends  TestListenerAdapter{
+	
+	@Override
+	public void onTestSuccess(ITestResult tr) {
+		System.out.println("成功的"+tr.getInstanceName()+"-"+tr.getName());
+	}
+	
+	
+	
+	@Override
+	public void onFinish(ITestContext testContext) {
+		StringBuilder str = new StringBuilder();
+		ITestNGMethod[] methods = this.getAllTestMethods();
+		str.append("一共执行了"+methods.length+"条测试用例\n");
+		java.util.List<ITestResult> fail = this.getFailedTests();
+		
+		str.append("一共失败了"+fail.size()+"\n");
+		for(ITestResult f:fail){
+			str.append(f.getInstanceName()+"-"+f.getName());
+			
+		}
+		System.out.println(str.toString());
+	}
+		
+}
