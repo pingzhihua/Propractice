@@ -1,0 +1,109 @@
+package com.second.demo;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.Test;
+
+public class Demo02 extends Demo01{
+	@Test(description="点击客户管理下的合同")
+	public void test11(){
+		test01();
+		//点击合同，展示所有未完成合同
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=browse&mode=unfinished']");
+		assertTrue(webtest.isTextPresent("等待回款"));
+	}
+	@Test(description="合同完成交付")
+	public void test12(){
+		test11();
+		//点击交付
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=receive&contractID=1']");
+		webtest.click("xpath=//input[@name='finish']");
+		//选择交付时间
+		webtest.click("xpath=//input[@name='deliveredDate']");
+		webtest.click("xpath=//td[@class='day today active']");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+		
+	}
+	@Test(description="编辑合同名称")
+	public void test13(){
+		test11();
+		//点击编辑的合同编号
+		webtest.click("xpath=//td[@title='112603']");
+		//点击编辑
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=edit&contractID=3']");
+		webtest.type("name=name", "王五买很多卫生纸");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));		
+	}
+	@Test(description="查看所有客户信息")
+	public void test14(){
+		test01();
+		//点击客户
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=customer&f=browse']");
+		assertTrue(webtest.isTextPresent("添加客户"));		
+	}
+	@Test(description="添加客户信息")
+	public void test15(){
+		test14();
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=customer&f=create']");
+		webtest.type("name=name", "黄三");
+		webtest.click("xpath=//select[@name='source']");
+		webtest.click("xpath=//option[@value='activity']");
+		webtest.type("name=sourceNote", "集体活动");
+		webtest.type("name=contact", "测试十");
+		webtest.type("name=phone", "10086110");
+		webtest.click("xpath=//select[@name='type']");
+		webtest.click("xpath=//option[@value='national']");
+		webtest.type("name=address[title]", "河北师范大学");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="全选客户信息指派特定人")
+	public void test16(){
+		test14();
+		//全选
+		webtest.click("xpath=//a[@id='allchecker']");
+		//指派人
+		webtest.click("xpath=//div[@id='assignedTO_chosen']");
+		webtest.click("xpath=//span[@title='王']");
+		webtest.click("xpath=//a[contains(.,'指派')]");
+		assertTrue(webtest.isTextPresent("退出"));		
+	}
+	@Test(description="查看供应商列表")
+	public void test17(){
+		test01();
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=provider&f=browse']");
+		assertTrue(webtest.isTextPresent("维护类目"));
+	}
+	@Test(description="添加供应商信息")
+	public void test18(){
+		test17();
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=provider&f=create']");
+		webtest.type("name=name", "手链");
+		webtest.type("name=contact", "测试十二");
+		webtest.type("name=phone", "10086112");
+		webtest.type("name=qq", "20191129");
+		webtest.type("weixin", "292028");
+		webtest.click("xpath=//select[@name='type']");
+		webtest.click("xpath=//option[@value='limited']");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="查看产品信息")
+	public void test19(){
+		test01();
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=product&f=browse']");
+		assertTrue(webtest.isTextPresent("维护分类"));
+	}
+	@Test(description="产品创建分类")
+	public void test20(){
+		test20();
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=tree&f=browse&type=product']");
+		webtest.type("name=children[11]", "可食用类");
+		webtest.type("name=children[12]", "可重复使用类");
+		webtest.click("xpath=//button[@type=submit]");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+		
+}
