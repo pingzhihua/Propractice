@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31265" started-at="2019-11-14T11:57:05Z" finished-at="2019-11-14T11:57:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31265" started-at="2019-11-14T11:57:05Z" finished-at="2019-11-14T11:57:37Z">
+      <class name="ranzhi.Front_Login_ranzhi">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:ranzhi.Front_Login_ranzhi@ea4a92b]" name="doBeforeClass" is-config="true" duration-ms="16065" started-at="2019-11-14T19:57:05Z" finished-at="2019-11-14T19:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:ranzhi.Front_Login_ranzhi@ea4a92b]" name="setup" is-config="true" duration-ms="2" started-at="2019-11-14T19:57:21Z" finished-at="2019-11-14T19:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:ranzhi.Front_Login_ranzhi@ea4a92b]" name="testLogin" duration-ms="8772" started-at="2019-11-14T19:57:21Z" finished-at="2019-11-14T19:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:ranzhi.Front_Login_ranzhi@ea4a92b]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-14T19:57:30Z" finished-at="2019-11-14T19:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test1()[pri:1, instance:ranzhi.Front_Login_ranzhi@ea4a92b]" name="test1" duration-ms="6378" started-at="2019-11-14T19:57:30Z" finished-at="2019-11-14T19:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- ranzhi.Front_Login_ranzhi -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,33 @@
+package com.second.demo;
+
+import static org.testng.Assert.assertTrue;
+
+
+import org.testng.annotations.Test;
+
+import com.webtest.core.BaseTest;
+
+public class Login extends BaseTest{
+	@Test
+	public void LoginSuccess() {
+		//打开页面
+		webtest.open("http://localhost/ranzhi/www/oa/index.php?m=attend&f=personal");
+		//文本框输入
+		webtest.type("name=account", "admin");
+		webtest.type("name=password", "123456");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("退出"));
+		
+	}
+	@Test
+	public void LoginFail(){
+		//打开页面
+		webtest.open("http://localhost/ranzhi/www/oa/index.php?m=attend&f=personal");
+		//文本框输入
+		webtest.type("name=account", "admin");
+		webtest.type("name=password", "111111");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("登陆失败，请检查您的成员名或密码是否填写正确。"));
+	}
+
+}
