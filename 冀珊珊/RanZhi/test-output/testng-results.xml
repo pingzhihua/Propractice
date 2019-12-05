@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25613" started-at="2019-11-14T03:16:59Z" finished-at="2019-11-14T03:17:25Z">
+  <suite name="Default suite" duration-ms="40717" started-at="2019-12-05T11:05:38Z" finished-at="2019-12-05T11:06:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25613" started-at="2019-11-14T03:16:59Z" finished-at="2019-11-14T03:17:25Z">
-      <class name="com.edu.ranzhi.LoginTest">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.ranzhi.LoginTest@5e025e70]" name="doBeforeClass" is-config="true" duration-ms="4119" started-at="2019-11-14T11:16:59Z" finished-at="2019-11-14T11:17:03Z">
+    <test name="Default test" duration-ms="40717" started-at="2019-12-05T11:05:38Z" finished-at="2019-12-05T11:06:18Z">
+      <class name="com.edu.ranzhi.BackUpTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.ranzhi.BackUpTest@58ceff1]" name="doBeforeClass" is-config="true" duration-ms="9360" started-at="2019-12-05T19:05:38Z" finished-at="2019-12-05T19:05:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="testGetLogin()[pri:0, instance:com.edu.ranzhi.LoginTest@5e025e70]" name="testGetLogin" duration-ms="12317" started-at="2019-11-14T11:17:03Z" finished-at="2019-11-14T11:17:15Z">
+        <test-method status="PASS" signature="testBackUp()[pri:0, instance:com.edu.ranzhi.BackUpTest@58ceff1]" name="testBackUp" duration-ms="31334" started-at="2019-12-05T19:05:47Z" finished-at="2019-12-05T19:06:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetLogin -->
-        <test-method status="PASS" signature="testGetLoginfail()[pri:0, instance:com.edu.ranzhi.LoginTest@5e025e70]" name="testGetLoginfail" duration-ms="9165" started-at="2019-11-14T11:17:15Z" finished-at="2019-11-14T11:17:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetLoginfail -->
-      </class> <!-- com.edu.ranzhi.LoginTest -->
+        </test-method> <!-- testBackUp -->
+      </class> <!-- com.edu.ranzhi.BackUpTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
