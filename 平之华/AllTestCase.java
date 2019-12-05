@@ -216,10 +216,7 @@ public class AllTestCase extends BaseTest{
 		webtest.click("link=任务");
 		webtest.enterFrame("iframe-dashboard");
 		webtest.click("xpath=//a[@href='/ranzhi/www/proj/index.php?m=task&f=close&taskID=5']");
-		webtest.tapClick();
-		webtest.tapType("备注");
-		webtest.tapClick();
-		webtest.enterClick();
+		webtest.click("xpath=//button[@id='submit']");
 		webtest.click("link=由我关闭");
 		Assert.assertTrue(webtest.isTextPresent("task3"));
 	}
