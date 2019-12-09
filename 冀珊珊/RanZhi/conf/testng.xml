@@ -2,13 +2,12 @@
   
 <suite name="Suite1" verbose="1" >
   <listeners>
-    <listener class-name="com.edu.core.ApiListener" />
+    <listener class-name="com.webtest.core.WebDriverEngine" />
   </listeners>
 
   <test name="test1" >
     <classes>
-       <class name="com.edu.qingguo.LoginTest" />
-       <class name="com.edu.qingguo.SkulistTest" />
+       <class name="com.edu.ranzhi.LoginTest" />
     </classes>
   </test>
 </suite>
