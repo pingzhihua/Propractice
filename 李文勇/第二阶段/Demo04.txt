@@ -1,0 +1,113 @@
+package com.second.demo;
+import static org.testng.Assert.assertTrue;
+import org.testng.annotations.Test;
+
+public class Demo04 extends Login{
+	@Test(description="进入加班页面")
+	public void test31(){
+		LoginSuccess();//登陆成功,进入日常办公
+		webtest.enterFrame("iframe-2");
+		//点击加班
+		webtest.click("link=加班");
+		assertTrue(webtest.isTextPresent("申请加班"));
+	}
+	@Test(description="添加加班信息")
+	public void test32() throws InterruptedException{
+		test31();
+		//点击申请加班
+		webtest.click("link=申请加班");
+		//休息日加班
+		webtest.click("xpath=//input[@value='rest']");
+		webtest.type("name=begin","2020-01-01");
+		webtest.type("name=end", "2020-01-01");
+		webtest.type("name=hours", "9");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+		
+	}
+	@Test(description="编辑未审核通过的加班信息")
+	public void test33() throws InterruptedException{
+		//点击编号为2的加班信息
+		webtest.click("xpath=//tr[@id='overtime2']");
+		Thread.sleep(1000);
+		webtest.click("link=编辑");
+		webtest.type("name=end","2020-12-16");
+		webtest.type("name=hours","24");
+		webtest.type("name=desc", "时间不够");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="通过加班中所有我的审核")
+	public void test34() throws InterruptedException{
+		test31();
+		webtest.click("link=我的审核");
+		webtest.click("link=全选");
+		webtest.click("批量通过");
+		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("暂时没有记录"));
+		
+	}
+	@Test(description="进入调休")
+	public void test35(){
+		LoginSuccess();
+		webtest.enterFrame("iframe-2");
+		//点击调休
+		webtest.click("link=调休");
+		assertTrue(webtest.isTextPresent("申请调休"));
+		
+	}
+	@Test(description="添加调休信息")
+	public void test36() throws InterruptedException{
+		test35();
+		webtest.click("link=申请调休");
+		Thread.sleep(1000);
+		webtest.type("name=begin","2020-01-10");			
+		webtest.type("name=end", "2020-01-10");
+		webtest.type("name=hours", "15");
+		webtest.click("xpath=//ul[@class='chosen-choices']");
+		webtest.click("xpath=//div[@class='chosen-drop']");
+		webtest.click("xpath=//li[@data-option-array-index='1']");
+		webtest.click("xpath=//textarea[@id='desc']");
+		webtest.type("name=desc", "家中有事");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));		
+	}
+	@Test(description="全部通过我的审核")	
+	public void test37(){
+		test35();
+		webtest.click("link=我的审核");
+		webtest.click("link=全选");
+		webtest.click("link=批量通过");
+		assertTrue(!webtest.isTextPresent("1"));
+		
+	}
+	@Test(description="进入出差页面")
+	public void test38(){
+		LoginSuccess();
+		webtest.enterFrame("iframe-2");
+		webtest.click("link=出差");
+		assertTrue(webtest.isTextPresent("新建出差"));		
+	}
+	@Test(description="新建出差信息")
+	public void test39(){
+		test38();
+		webtest.click("link=新建出差");
+		webtest.type("name=name","河北考察");
+		webtest.type("name=begin","2019-12-12");
+		webtest.type("name=end","2019-12-12");
+		webtest.type("name=from","石家庄");
+		webtest.type("name=to","鹿泉区");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+		
+	}
+	@Test(description="删除编号为1的出差信息")
+	public void test40() throws InterruptedException{
+		test38();
+		webtest.click("xpath=//a[@href='/ranzhi/www/oa/index.php?m=trip&f=delete&id=1']");
+		Thread.sleep(1000);
+		webtest.alertAccept();
+		assertTrue(!webtest.isTextPresent("1"));
+	}
+
+}

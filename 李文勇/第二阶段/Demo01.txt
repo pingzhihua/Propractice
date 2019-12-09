@@ -7,21 +7,21 @@ public class Demo01 extends Login{
 	@Test(description="展示客户管理首页")
 	public void test01(){
 		LoginSuccess();//登陆成功
-		webtest.click("xpath=//strong[@title='客户管理']");//点击客户管理
+		webtest.click("xpath=//button[@title='客户管理']");//点击客户管理
 		assertTrue(webtest.isTextPresent("我的订单"));
 	}
 	
 	@Test(description="查看编号为9的订单详细信息")
-	public void test02(){
+	public void test02() throws InterruptedException{
+		Thread.sleep(1000);
 		test01();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=browse']");	//点击订单
+		webtest.click("xpath=//a[@href=/ranzhi/www/crm/index.php?m=order&f=browse]");	//点击订单
 		webtest.click("xpath=//tr[@data-url='/ranzhi/www/crm/index.php?m=order&f=view&orderID=9']");//指定订单
 		assertTrue(webtest.isTextPresent("关闭"));
 	}
 
 	@Test(description="将编号为9的订单状态改为已关闭")
 	public void test03() throws InterruptedException{
-		test02();
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=edit&orderID=9']");//编辑指定订单
 		webtest.click("xpath=//select[@id='status']");//点击状态栏
 		webtest.click("xpath=//option[@value='closed']");//点击关闭
@@ -31,7 +31,7 @@ public class Demo01 extends Login{
 		assertTrue(webtest.isTextPresent("保存成功"));
 	}
 	@Test(description="将编号为9的订单删除")
-	public void test04(){
+	public void test04() throws InterruptedException{
 		test02();
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=delete&orderID=9']");//点击删除
 		webtest.alertAccept();//确定弹出框
@@ -41,6 +41,7 @@ public class Demo01 extends Login{
 	@Test(description="客户管理下点击创建新订单")
 	public void test05(){
 		test01();
+		webtest.enterFrame("iframe-1");
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=browse']");//点击订单
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=create']");//点击创建订单
 		assertTrue(webtest.isTextPresent("保存"));
@@ -48,7 +49,6 @@ public class Demo01 extends Login{
 	}
 	@Test(description="创建已有客户已有产品的新订单")
 	public void test06(){
-		test05();
 		webtest.click("xpath=//div[@id='customer_chosen']");
 		webtest.click("xpath=//span[@title='张三']");
 		webtest.click("xpath=//div[@id='chosen-choices']");
@@ -81,6 +81,7 @@ public class Demo01 extends Login{
 	@Test(description="查看指派给我的订单")
 	public void test08(){
 		test01();
+		webtest.enterFrame("iframe-1");
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=browse']");//进入订单页面
 		//进入指派给我的订单页面
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=order&f=browse&mode=assignedTo']");
@@ -89,10 +90,10 @@ public class Demo01 extends Login{
 	
 	@Test(description="导出指派给我的订单")
 	public void test09() throws InterruptedException{
-		test08();
+		
 		webtest.click("xpath=//button[@type='button']");//点击导出
 		//选择导出范围
-		webtest.click("xpath=//li[@href='/ranzhi/www/crm/index.php?m=order&f=export&mode=thisPage&orderBy=id_desc']");
+		webtest.click("link=导出本页记录");
 		webtest.type("name=fileName", "指派给我的订单");
 		webtest.click("xpath=//select[@id='encode']");
 		webtest.click("xpath=//option[@value='utf-8']");
@@ -105,6 +106,7 @@ public class Demo01 extends Login{
 	@Test(description="生成部分报表")
 	public void test10(){
 		test01();
+		webtest.enterFrame("iframe-1");
 		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=report&f=browse&module=order']");
 		webtest.click("xpath=//input[@value='productLine']");//按产品统计
 		webtest.click("xpath=//input[@value='year']");//按年统计
