@@ -2,7 +2,10 @@ package com.second.demo;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.webtest.dataprovider.ExcelDataProvider;
 
 public class Demo05 extends Login{
 	@Test(description="进入项目首页")
@@ -88,17 +91,22 @@ public class Demo05 extends Login{
 		assertTrue(webtest.isTextPresent("保存成功"));
 		
 	}
-	@Test(description="添加子类目")
-	public void test48() throws InterruptedException{
+	@DataProvider(name="excel")
+	public Object[][] words1() throws Exception{
+		ExcelDataProvider d = new ExcelDataProvider();
+		return d.getTestDataByExcel("data//shixun1.xlsx","Sheet1");
+	}
+
+	@Test(dataProvider="excel",description="添加子类目")
+	public void test48(String href,String name1,String value1,String name2,String value2,String name3,String value3) throws InterruptedException{
 		test45();
 		webtest.click("link=设置");
 		webtest.click("link=博客类目");
-		webtest.click("xpath=//a[@href='/ranzhi/www/team/index.php?m=tree&f=children&type=blog&category=28&root=0']");
-		webtest.type("name=children[35]", "冒险类");
-		webtest.type("name=children[34]", "科技创新类");
-		webtest.type("name=children[33]","记叙文类");
+		webtest.click(href);
+		webtest.type(name1,value1);
+		webtest.type(name2,value2 );
+		webtest.type(name3,value3);
 		webtest.click("xpath=//button[@type='submit']");
 		assertTrue(webtest.isTextPresent("保存成功"));
 	}
-
 }
