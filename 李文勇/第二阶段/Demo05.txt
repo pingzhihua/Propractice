@@ -1,0 +1,104 @@
+package com.second.demo;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.Test;
+
+public class Demo05 extends Login{
+	@Test(description="进入项目首页")
+	public void test41() throws InterruptedException{
+		LoginSuccess();
+		webtest.mouseoverElement("xpath=//*[@id='s-menu-3']/button");
+	    webtest.click("xpath=//*[@id='s-menu-3']/button");
+	    // 点击设置
+	    Thread.sleep(3000);
+	    webtest.enterFrame("iframe-3");
+		assertTrue(webtest.isTextPresent("添加区块"));	
+	}
+	@Test(description="添加项目区块")
+	public void test42() throws InterruptedException{
+		test41();
+		webtest.click("link=添加区块");
+		webtest.click("xpath=//select[@name='blocks']");
+		//选择任务区块
+		webtest.click("xpath=//option[@value='task']");
+		Thread.sleep(1000);
+		webtest.type("name=title", "任务列表栏");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));	
+	}
+	
+	@Test(description="进入现金记账首页")
+	public void test43() throws InterruptedException{
+		LoginSuccess();
+		webtest.mouseoverElement("xpath=//*[@id='s-menu-5']/button");
+	    webtest.click("xpath=//*[@id='s-menu-5']/button");
+	    // 点击设置
+	    Thread.sleep(2000);
+	    webtest.enterFrame("iframe-5");
+		assertTrue(webtest.isTextPresent("添加区块"));			
+	}
+	@Test(description="添加账号")
+	public void test44() throws InterruptedException{
+		test43();
+		webtest.click("link=账户");
+		webtest.click("link=添加账号");
+		Thread.sleep(1000);
+		webtest.type("name=abbr", "中国工商银行");
+		webtest.type("name=tags", "单日不超5万");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));	
+	}
+	
+	@Test(description="进入团队首页")
+	public void test45() throws InterruptedException{
+		LoginSuccess();
+		webtest.mouseoverElement("xpath=//*[@id='s-menu-6']/button");
+	    webtest.click("xpath=//*[@id='s-menu-6']/button");
+	    // 点击设置
+	    Thread.sleep(3000);
+	    webtest.enterFrame("iframe-6");
+		assertTrue(webtest.isTextPresent("添加区块"));	
+		
+	}
+	@Test(description="添加团队区块信息")
+	public void test46() throws InterruptedException{
+		test45();
+		 //添加区块
+	    webtest.click("link=添加区块");
+	    webtest.click("xpath=//select[@name=blocks]");
+	    webtest.click("xpath=//option[@value='blog']");
+	    Thread.sleep(1000);
+	    webtest.type("name=title", "博客早知道");
+	    webtest.typeAndClear("name=params[num]", "10");
+	    webtest.click("xpath=//button[@type='submit']");
+	    assertTrue(webtest.isTextPresent("保存成功"));				
+	}
+	@Test(description="设置博客类目")
+	public void test47() throws InterruptedException{
+		test45();
+		webtest.click("link=设置");
+		webtest.click("link=博客类目");
+		//编辑类目
+		webtest.click("xpath=//a[@href='/ranzhi/www/team/index.php?m=tree&f=edit&category=28']");
+		Thread.sleep(1000);
+		webtest.typeAndClear("value=小说","文学常识");
+		webtest.click("xpath=//input[@id='rights5']");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+		
+	}
+	@Test(description="添加子类目")
+	public void test48() throws InterruptedException{
+		test45();
+		webtest.click("link=设置");
+		webtest.click("link=博客类目");
+		webtest.click("xpath=//a[@href='/ranzhi/www/team/index.php?m=tree&f=children&type=blog&category=28&root=0']");
+		webtest.type("name=children[35]", "冒险类");
+		webtest.type("name=children[34]", "科技创新类");
+		webtest.type("name=children[33]","记叙文类");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+
+}

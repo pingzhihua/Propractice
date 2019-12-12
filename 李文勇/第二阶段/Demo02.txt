@@ -9,18 +9,18 @@ public class Demo02 extends Demo01{
 	public void test11(){
 		test01();
 		//点击合同，展示所有未完成合同
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=browse&mode=unfinished']");
+		webtest.enterFrame("iframe-1");
+		webtest.click("link=合同");
 		assertTrue(webtest.isTextPresent("等待回款"));
 	}
 	@Test(description="合同完成交付")
 	public void test12(){
 		test11();
 		//点击交付
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=receive&contractID=1']");
+		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=contract&f=delivery&contractID=1']");
 		webtest.click("xpath=//input[@name='finish']");
 		//选择交付时间
-		webtest.click("xpath=//input[@name='deliveredDate']");
-		webtest.click("xpath=//td[@class='day today active']");
+		webtest.type("name=deliveredDate", "2019-12-10");
 		webtest.click("xpath=//button[@type='submit']");
 		assertTrue(webtest.isTextPresent("保存成功"));
 		
@@ -40,13 +40,14 @@ public class Demo02 extends Demo01{
 	public void test14(){
 		test01();
 		//点击客户
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=customer&f=browse']");
+		webtest.enterFrame("iframe-1");
+		webtest.click("link=客户");
 		assertTrue(webtest.isTextPresent("添加客户"));		
 	}
 	@Test(description="添加客户信息")
 	public void test15(){
-		test14();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=customer&f=create']");
+		
+		webtest.click("link=添加客户");
 		webtest.type("name=name", "黄三");
 		webtest.click("xpath=//select[@name='source']");
 		webtest.click("xpath=//option[@value='activity']");
@@ -73,13 +74,14 @@ public class Demo02 extends Demo01{
 	@Test(description="查看供应商列表")
 	public void test17(){
 		test01();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=provider&f=browse']");
+		webtest.enterFrame("iframe-1");
+		webtest.click("link=供应商");
 		assertTrue(webtest.isTextPresent("维护类目"));
 	}
 	@Test(description="添加供应商信息")
 	public void test18(){
-		test17();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=provider&f=create']");
+		
+		webtest.click("link=添加供应商");
 		webtest.type("name=name", "手链");
 		webtest.type("name=contact", "测试十二");
 		webtest.type("name=phone", "10086112");
@@ -93,13 +95,14 @@ public class Demo02 extends Demo01{
 	@Test(description="查看产品信息")
 	public void test19(){
 		test01();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=product&f=browse']");
+		webtest.enterFrame("iframe-1");
+		webtest.click("link=产品");
 		assertTrue(webtest.isTextPresent("维护分类"));
 	}
 	@Test(description="产品创建分类")
 	public void test20(){
-		test20();
-		webtest.click("xpath=//a[@href='/ranzhi/www/crm/index.php?m=tree&f=browse&type=product']");
+		
+		webtest.click("维护分类");
 		webtest.type("name=children[11]", "可食用类");
 		webtest.type("name=children[12]", "可重复使用类");
 		webtest.click("xpath=//button[@type=submit]");

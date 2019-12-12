@@ -1,0 +1,116 @@
+package com.second.demo;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.Test;
+
+public class Demo03 extends Login{
+	@Test(description="进入日常办公首页")
+	public void test21(){
+		LoginSuccess();//登陆成功
+		webtest.enterFrame("iframe-2");
+		webtest.click("link=首页");
+		assertTrue(webtest.isTextPresent("日历"));
+	}
+	@Test(description="查看所有审批")
+	public void test22(){
+		test21();
+		//点击审批
+		webtest.click("link=审批");
+		assertTrue(webtest.isTextPresent("模板"));
+	}
+	@Test(description="对加班编号为1的审批进行通过")
+	public void test23(){
+		test21();
+		//点击加班
+		webtest.click("link=加班");
+		//点击编号为1的审批通过
+		webtest.click("xpath=//a[@href='/ranzhi/www/oa/index.php?m=overtime&f=review&id=1&status=pass']");
+		webtest.alertAccept();//弹出框确定
+		assertTrue(!webtest.isTextPresent("1"));
+	}
+	@Test(description="无公告下添加新公告")
+	public void test24() throws InterruptedException {
+		test21();
+		//点击公告
+		webtest.click("xpath=//a[@href='/ranzhi/www/oa/index.php?m=announce&f=browse/']");
+		webtest.click("xpath=//div[@id='menuActions']");
+		Thread.sleep(3000);
+		webtest.type("name=children[1]","放假时间");
+		webtest.type("name=children[2]","调休情况");
+		webtest.type("name=children[3]", "考勤详情");
+		webtest.type("name=children[4]","加班情况");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="已有公告后添加放假公告")
+	public void test25() throws InterruptedException{
+		test21();
+		webtest.click("link=公告");
+		webtest.click("link=添加公告");
+		Thread.sleep(3000);
+		webtest.click("xpath=//ul[@class='chosen-choices']");
+		webtest.click("xpath=//li[@data-option-array-index='0']");
+		webtest.type("name=title", "放假通知");
+		webtest.enterFrame("ke-edit-iframe");
+		webtest.click("tag=body");
+		webtest.type("tag=body", "元旦放假三天");
+		webtest.leaveFrame();
+	    webtest.click("xpath=//button[@type='submit']");
+	    assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="申请年假")
+	public void test26(){
+		test21();
+		webtest.click("xpath=//a[@href='/ranzhi/www/oa/index.php?m=leave&f=personal']");
+		webtest.click("xpath=//a[@href='/ranzhi/www/oa/index.php?m=leave&f=create']");
+		webtest.click("xpath=//input[@value='annual']");
+		webtest.type("name=begin", "2020-01-01");
+		webtest.type("name=start","09:00");
+		webtest.type("name=end","2020-01-03");
+		webtest.type("name=finish","18:00");
+		webtest.type("name=hours","72");
+		webtest.type("name=desc","正常年假");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="查看我的所有请假审核")
+	public void test27(){
+		test21();
+		webtest.click("link=请假");
+		webtest.click("我的审核");
+		assertTrue(webtest.isTextPresent("等待审核"));	
+	}
+	@Test(description="对我的审核进行批量通过")
+	public void test28(){
+		test27();
+		webtest.click("xpath=//input[@value='4']");
+		webtest.click("xpath=//input[@value='3']");
+		webtest.click("xpath=//input[@value='2']");
+		webtest.click("link=批量通过");
+		assertTrue(!webtest.isTextPresent("4"));		
+	}
+	@Test(description="对请假审批人进行设置")
+	public void test29(){
+		test21();
+		webtest.click("link=请假");
+		webtest.click("link=设置");
+		webtest.click("xpath=//option[@value='zhang']");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+	}
+	@Test(description="添加申请补班信息")
+	public void test30(){
+		test21();
+		webtest.click("link=补班");
+		webtest.click("link=申请补班");
+		webtest.type("name=begin","2020-01-04");
+		webtest.type("name=end","2020-01-05");
+		webtest.type("name=hours","30");
+		webtest.click("xpath=//ul[@class='chosen-choices']");
+		webtest.click("xpath=//li[@data-option-array-index='1']");
+		webtest.click("xpath=//button[@type='submit']");
+		assertTrue(webtest.isTextPresent("保存成功"));
+			
+	}
+}
