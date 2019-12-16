@@ -6,7 +6,7 @@ import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.NSDataProvider;
 
 public class AddGroupTest extends BaseTest {
-	
+
 	@Test(dataProvider = "groupData", dataProviderClass = NSDataProvider.class)
 	public void testAddGroup(String name, String desc) {
 
@@ -17,8 +17,5 @@ public class AddGroupTest extends BaseTest {
 		webtest.type("name=desc", desc);
 		webtest.click("xpath=//button[@id='submit']");
 
-		// Ç©ÍË
-		// webtest.leaveFrame();
-		// webtest.click("xpath=//a[contains(text(),'Ç©ÍË')]");
 	}
 }

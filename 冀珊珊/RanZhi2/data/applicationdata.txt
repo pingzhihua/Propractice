@@ -1,1 +1,6 @@
-娱乐,YL,yule1,http://www.baidu.com,2
+娱乐1,YL,yule1,http://www.baidu.com
+娱乐2,YL,yule2,http://www.sohou.com
+娱乐3,YL,yule3,http://www.mengxiang.com
+娱乐4,YL,yule4,http://www.baibai.com
+娱乐5,YL,yule5,http://www.sina.com
+娱乐6,YL,yule6,http://www.sougou.com
