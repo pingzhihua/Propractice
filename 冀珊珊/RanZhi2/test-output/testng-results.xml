@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23970" started-at="2019-12-16T13:06:48Z" finished-at="2019-12-16T13:07:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23970" started-at="2019-12-16T13:06:48Z" finished-at="2019-12-16T13:07:12Z">
+      <class name="com.edu.ranzhi.LoginTest">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.ranzhi.LoginTest@58ceff1]" name="doBeforeClass" is-config="true" duration-ms="17242" started-at="2019-12-16T21:06:48Z" finished-at="2019-12-16T21:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testGetLogin()[pri:0, instance:com.edu.ranzhi.LoginTest@58ceff1]" name="testGetLogin" duration-ms="3370" started-at="2019-12-16T21:07:05Z" finished-at="2019-12-16T21:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLogin -->
+        <test-method status="PASS" signature="testGetLoginfail()[pri:0, instance:com.edu.ranzhi.LoginTest@58ceff1]" name="testGetLoginfail" duration-ms="3349" started-at="2019-12-16T21:07:09Z" finished-at="2019-12-16T21:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLoginfail -->
+      </class> <!-- com.edu.ranzhi.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

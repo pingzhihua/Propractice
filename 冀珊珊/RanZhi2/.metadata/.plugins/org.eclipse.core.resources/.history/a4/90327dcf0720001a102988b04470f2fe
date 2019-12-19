@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="test">
+        <classes>
+       		<class name="com.edu.ranzhi.LoginTest" />
+            <class name="com.edu.ranzhi.AddApplicationTest" />
+	        <class name="com.edu.ranzhi.AddGroupTest" />
+			<class name="com.edu.ranzhi.AddMembersTest" />
+			<class name="com.edu.ranzhi.AddPlanTest" />
+			<class name="com.edu.ranzhi.BackUpTest" />
+			<class name="com.edu.ranzhi.CompanyinformationTest" />
+			<class name="com.edu.ranzhi.MaintenanceDepartmentTest" />
+			<class name="com.edu.ranzhi.RestartXuanXuan" />
+			<class name="com.edu.ranzhi.SendingSettingsTest" />
+        </classes>
+    </test>
+</suite>

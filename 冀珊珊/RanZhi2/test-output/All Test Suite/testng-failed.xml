@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <test verbose="2" name="test">
+    <classes>
+      <class name="com.edu.ranzhi.AddApplicationTest"/>
+      <class name="com.edu.ranzhi.AddGroupTest"/>
+    </classes>
+  </test> <!-- test -->
+  <test name="test(failed)">
+    <classes>
+      <class name="com.edu.ranzhi.AddApplicationTest">
+        <methods>
+          <include name="doBefore"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.edu.ranzhi.AddApplicationTest -->
+      <class name="com.edu.ranzhi.AddGroupTest">
+        <methods>
+          <include name="doBefore"/>
+          <include name="testAddGroup"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.edu.ranzhi.AddGroupTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
