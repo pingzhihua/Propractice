@@ -1,0 +1,38 @@
+package com.edu.qingguo;
+
+import org.testng.annotations.Test;
+
+import com.edu.core.HttpDriver;
+import com.edu.utils.Checker;
+
+//这是没拆分以前，第三个出错了
+public class SkulistTest1 {
+	String list_url = "/common/skuList";
+
+	@Test(description = "获取所有商品的sku列表成功")
+	public void test1() throws Exception {
+		String result = HttpDriver.doGet(list_url);
+		Checker check = new Checker(result);
+		System.out.println(result);
+		check.verifyXpath("message", "succcess");
+//		check.verifyTextPresent("message");
+//		check.verifyXpath("code", "200");
+	}
+
+	@Test(description = "获取goodsId=1的商品sku信息成功")
+	public void test2() throws Exception {
+		String result = HttpDriver.doGet(list_url + "?goodsId=1");
+		System.out.println(result);
+		Checker check = new Checker(result);
+		check.verifyTextPresent("message");
+//		check.verifyXpath("code", "200");
+	}
+
+	@Test(description = "获取goodsId=2147483648的商品sku信息失败(超过int最大取值范围)")
+	public void test3() throws Exception {
+		String result = HttpDriver.doGet(list_url + "?goodsId=2147483648");
+		Checker check = new Checker(result);
+		check.verifyTextPresent("message");
+//		check.verifyXpath("code", "400");
+	}
+}

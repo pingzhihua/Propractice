@@ -1,0 +1,38 @@
+package com.edu.qingguo;
+
+import org.testng.annotations.Test;
+
+import com.edu.core.HttpDriver;
+import com.edu.utils.Checker;
+
+public class SkulistTest {
+	String list_url = "/common/skuList";
+	Checker check = null;
+
+	public void skuit(String para) throws Exception {
+		String result = HttpDriver.doGet(list_url + para);
+		System.out.println(result);
+		check = new Checker(result);
+	}
+
+	@Test(description = "获取所有商品的sku列表成功")
+	public void test1() throws Exception {
+		skuit("");
+//		check.verifyXpath("message", "succcess");
+//		check.verifyTextPresent("message");
+//		check.verifyXpath("code", "200");
+	}
+
+//	@Test(description = "获取goodsId=1的商品sku信息成功")
+//	public void test2() throws Exception {
+//		skuit("?goodsId=1");
+//		check.verifyXpath("code", "200");
+//	}
+
+//	@Test(description = "获取goodsId=2147483648的商品sku信息失败(超过int最大取值范围)")
+//	public void test3() throws Exception {
+//		skuit("?goodsId=2147483648");
+//		check.verifyXpath("code", "400");
+//		check.verifyXpath("message", "商品ID不正确");
+//	}
+}

@@ -1,0 +1,39 @@
+[FATAL] 2019-09-18 17:15:11,536 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-18 17:16:17,898 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-18 17:16:40,291 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-18 19:18:30,814 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :400; expected Value is :200
+[ERROR] 2019-09-18 19:18:30,818 com.edu.utils.Log - com.edu.qingguo.LoginTest@66d33a-testLoginForWrongNumber运行失败
+[FATAL] 2019-09-18 19:20:53,877 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :400; expected Value is :200
+[ERROR] 2019-09-18 19:20:53,884 com.edu.utils.Log - com.edu.qingguo.LoginTest@66d33a-testLoginForWrongPhone运行失败
+[FATAL] 2019-09-18 19:27:05,611 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :用户名或者密码错误; expected Value is :success
+[FATAL] 2019-09-18 20:20:58,928 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :200; expected Value is :400
+[FATAL] 2019-09-19 09:47:44,371 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :200; expected Value is :400
+[FATAL] 2019-09-19 09:49:41,206 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :200; expected Value is :400
+[FATAL] 2019-09-19 09:55:21,301 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :200; expected Value is :400
+[FATAL] 2019-09-24 12:15:27,020 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-09-25 15:46:11,736 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :用户名或者密码错误
+[FATAL] 2019-09-25 20:06:48,858 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-11-13 15:30:59,914 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 14:24:15,031 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 14:29:37,069 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 14:30:23,374 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 14:32:06,610 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:28:44,674 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:28:44,686 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:28:44,699 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:29:59,338 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:29:59,357 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:30:42,332 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:30:42,346 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:31:57,051 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 16:31:57,062 com.edu.utils.Log - the Text: 'message' is not Present!
+[FATAL] 2019-12-18 19:48:26,813 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :succcess; expected Value is :fail
+[FATAL] 2019-12-18 19:48:26,830 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :succcess; expected Value is :fail
+[FATAL] 2019-12-18 19:50:19,062 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :succcess; expected Value is :fail
+[FATAL] 2019-12-18 19:50:38,970 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :succcess; expected Value is :fail
+[FATAL] 2019-12-18 19:50:38,984 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :succcess; expected Value is :success
+[FATAL] 2019-12-18 19:51:37,114 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-19 08:43:05,559 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-19 08:54:19,502 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-19 08:55:05,395 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-19 08:58:43,845 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail

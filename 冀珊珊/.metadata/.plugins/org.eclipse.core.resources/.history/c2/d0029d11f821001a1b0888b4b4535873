@@ -1,0 +1,61 @@
+package com.edu.qingguo;
+
+
+import org.apache.http.client.CookieStore;
+import org.testng.annotations.Test;
+
+import com.edu.core.HttpDriver;
+import com.edu.utils.Checker;
+import com.edu.utils.Common;
+
+import net.sf.json.JSONObject;
+
+public class Submit {
+	
+	String submit_url="/fgadmin/orders/submit";
+	Checker check=null;
+	
+	@Test
+	public void submitTest() throws Exception{
+		JSONObject submitbody=new JSONObject();
+		submitbody.element("login","true");
+		submitbody.element("receiverName","张三");
+		submitbody.element("cellPhone","12345678901");
+		submitbody.element("addressDetail","23");
+		submitbody.element("province","浙江省");
+		submitbody.element("city","杭州市");
+		submitbody.element("area","滨江区");
+		submitbody.element("transportFee","8");
+		String result=HttpDriver.doPost(HttpDriver.base_url+submit_url, submitbody);
+		check = new Checker(result);
+		if ("login".equals("true")) {
+			try {
+				check.verifyXpath("message", "success");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}			
+		} 
+		else {
+			return;
+		}
+		
+	}
+}
+
+//	@DataProvider(name="excel")
+//	public Object[][] getExcelData() throws IOException{
+//		return new ExcelDataProvider().getTestDataByExcel("data/user.xlsx","Sheet1");
+//	}
+//	
+//	
+//	
+////	@Test(dataProvider="excel",dataProviderClass=NSDataProvider.class);  invoke反射机制
+//	
+////	数据驱动。参数化
+//	@Test(dataProvider="excel")
+//	public void testSubmit(String u_name,String passsword){
+//		System.out.println(u_name+" "+passsword);
+//		
+////	    Integer.getInteger(nm);
+//		CookieStore cookieStore=Common.getCookie(u_name,passsword);
+//		
