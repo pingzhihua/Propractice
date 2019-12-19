@@ -1,12 +1,9 @@
 package com.edu.qingguo;
 
-import org.apache.http.client.CookieStore;
 import org.testng.annotations.Test;
 
 import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
-import com.edu.utils.Common;
-
 import net.sf.json.JSONObject;
 
 public class NewAddressTest {
@@ -14,7 +11,6 @@ public class NewAddressTest {
 
 	@Test
 	public void testNewSuccess() throws Exception {
-		CookieStore cookie = Common.getCookie("20000000009", "netease123");
 		JSONObject para = new JSONObject();
 		para.element("login", "true");
 		para.element("id", "");
@@ -24,7 +20,7 @@ public class NewAddressTest {
 		para.element("province", "zhejiangsheng");
 		para.element("city", "hangzhoushi");
 		para.element("area", "binjiangqu");
-		String result = HttpDriver.doPost(address_list, para, cookie);
+		String result = HttpDriver.doPost(address_list, para);
 		System.out.println(result);
 		Checker checker = new Checker(result);
 		checker.assertXpath("message", "success");
@@ -32,7 +28,6 @@ public class NewAddressTest {
 
 	@Test
 	public void testNewFail() throws Exception {
-		CookieStore cookie = Common.getCookie("20000000009", "netease123");
 		JSONObject para = new JSONObject();
 		para.element("login", "fail");
 		para.element("id", "");
@@ -42,7 +37,7 @@ public class NewAddressTest {
 		para.element("province", "zhejiangsheng");
 		para.element("city", "hangzhoushi");
 		para.element("area", "binjiangqu");
-		String result = HttpDriver.doPost(address_list, para, cookie);
+		String result = HttpDriver.doPost(address_list, para);
 		System.out.println(result);
 		Checker checker = new Checker(result);
 		checker.assertXpath("message", "请先登录！");
