@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false"> 
+	<listeners>
+    	<listener class-name="com.webtest.core.WebTestListener" />
+	</listeners>
+	<test name="Test"> 
+		<classes> 
+			<class name="com.webtest.ranzhicase.BackManageTestCases"/>
+			<class name="com.webtest.ranzhicase.CashAccountTestCases"/> 
+			<class name="com.webtest.ranzhicase.CustomerManageTestCases"/> 
+			<class name="com.webtest.ranzhicase.DailyOfficeTestCases"/> 
+			<class name="com.webtest.ranzhicase.MyTerritoryTestCases"/> 
+			<class name="com.webtest.ranzhicase.OtherTestCases"/> 
+		 </classes> 
+	</test> <!-- Test --> 
+</suite> <!-- Suite -->

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.webtest.core.WebTestListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.webtest.ranzhicase.BackManageTestCases"/>
+      <class name="com.webtest.ranzhicase.CashAccountTestCases"/>
+      <class name="com.webtest.ranzhicase.CustomerManageTestCases"/>
+      <class name="com.webtest.ranzhicase.DailyOfficeTestCases"/>
+      <class name="com.webtest.ranzhicase.MyTerritoryTestCases"/>
+      <class name="com.webtest.ranzhicase.OtherTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.webtest.ranzhicase.MyTerritoryTestCases">
+        <methods>
+          <include name="testLoginSuccess"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.MyTerritoryTestCases -->
+      <class name="com.webtest.ranzhicase.DailyOfficeTestCases">
+        <methods>
+          <include name="testLoginSuccess"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.DailyOfficeTestCases -->
+      <class name="com.webtest.ranzhicase.BackManageTestCases">
+        <methods>
+          <include name="login"/>
+          <include name="testApplication" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.BackManageTestCases -->
+      <class name="com.webtest.ranzhicase.OtherTestCases">
+        <methods>
+          <include name="testTeam32"/>
+          <include name="testTeam24"/>
+          <include name="testTeam46"/>
+          <include name="testTeam30"/>
+          <include name="testTeam33"/>
+          <include name="testTeam31"/>
+          <include name="testTeam38"/>
+          <include name="testTeam36"/>
+          <include name="testTeam39"/>
+          <include name="testTeam34"/>
+          <include name="Login"/>
+          <include name="doBeforeClass"/>
+          <include name="testTeam21"/>
+          <include name="testTeam43"/>
+          <include name="testTeam35"/>
+          <include name="testTeam41"/>
+          <include name="testTeam22"/>
+          <include name="testTeam44"/>
+          <include name="testTeam42"/>
+          <include name="testTeam40"/>
+          <include name="testTeam29"/>
+          <include name="testTeam27"/>
+          <include name="testTeam25"/>
+          <include name="testTeam47"/>
+          <include name="testTeam28"/>
+          <include name="testTeam23"/>
+          <include name="testTeam45"/>
+          <include name="testTeam26"/>
+          <include name="testTeam48"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.OtherTestCases -->
+      <class name="com.webtest.ranzhicase.CashAccountTestCases">
+        <methods>
+          <include name="checkaccount"/>
+          <include name="touzi" invocation-numbers="0 1 2 3 4"/>
+          <include name="addspend" invocation-numbers="0 1 2 3 4"/>
+          <include name="testLoginSuccess"/>
+          <include name="demo11"/>
+          <include name="demo22"/>
+          <include name="demo27"/>
+          <include name="demo28"/>
+          <include name="demo29"/>
+          <include name="demo23"/>
+          <include name="demo02"/>
+          <include name="demo24"/>
+          <include name="demo03"/>
+          <include name="doBeforeClass"/>
+          <include name="demo20"/>
+          <include name="testmoney" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.CashAccountTestCases -->
+      <class name="com.webtest.ranzhicase.CustomerManageTestCases">
+        <methods>
+          <include name="test34"/>
+          <include name="LoginFail"/>
+          <include name="test33"/>
+          <include name="test07"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.CustomerManageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

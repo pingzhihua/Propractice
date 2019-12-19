@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.webtest.core.WebTestListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.webtest.ranzhicase.BackManageTestCases"/>
+      <class name="com.webtest.ranzhicase.CashAccountTestCases"/>
+      <class name="com.webtest.ranzhicase.CustomerManageTestCases"/>
+      <class name="com.webtest.ranzhicase.DailyOfficeTestCases"/>
+      <class name="com.webtest.ranzhicase.MyTerritoryTestCases"/>
+      <class name="com.webtest.ranzhicase.OtherTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.webtest.ranzhicase.OtherTestCases">
+        <methods>
+          <include name="testTeam32"/>
+          <include name="testTeam24"/>
+          <include name="testTeam30"/>
+          <include name="testTeam33"/>
+          <include name="testTeam31"/>
+          <include name="testTeam38"/>
+          <include name="testTeam36"/>
+          <include name="testTeam39"/>
+          <include name="testTeam34"/>
+          <include name="testTeam21"/>
+          <include name="testTeam13"/>
+          <include name="testTeam22"/>
+          <include name="testTeam20"/>
+          <include name="testTeam29"/>
+          <include name="testTeam27"/>
+          <include name="testTeam25"/>
+          <include name="testTeam28"/>
+          <include name="testTeam23"/>
+          <include name="testTeam26"/>
+          <include name="testTeam10"/>
+          <include name="testTeam02"/>
+          <include name="testTeam46"/>
+          <include name="testTeam11"/>
+          <include name="testTeam18"/>
+          <include name="testTeam16"/>
+          <include name="testTeam19"/>
+          <include name="testTeam14"/>
+          <include name="testTeam17"/>
+          <include name="testTeam12"/>
+          <include name="Login"/>
+          <include name="testTeam15"/>
+          <include name="doBeforeClass"/>
+          <include name="testTeam43"/>
+          <include name="testTeam35"/>
+          <include name="testTeam41"/>
+          <include name="testTeam44"/>
+          <include name="testTeam42"/>
+          <include name="testTeam40"/>
+          <include name="testTeam07"/>
+          <include name="testTeam05"/>
+          <include name="testTeam08"/>
+          <include name="testTeam03"/>
+          <include name="testTeam47"/>
+          <include name="testTeam06"/>
+          <include name="testTeam01"/>
+          <include name="testTeam45"/>
+          <include name="testTeam04"/>
+          <include name="testTeam48"/>
+          <include name="testTeam09"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.OtherTestCases -->
+      <class name="com.webtest.ranzhicase.CustomerManageTestCases">
+        <methods>
+          <include name="LoginFail"/>
+          <include name="test41"/>
+          <include name="test01"/>
+          <include name="test23"/>
+          <include name="test45"/>
+          <include name="test42"/>
+          <include name="test21"/>
+          <include name="test43"/>
+          <include name="test40"/>
+          <include name="test05"/>
+          <include name="test27"/>
+          <include name="test02"/>
+          <include name="test24"/>
+          <include name="test46"/>
+          <include name="test25"/>
+          <include name="test47"/>
+          <include name="test22"/>
+          <include name="test44"/>
+          <include name="test28"/>
+          <include name="test07"/>
+          <include name="test29"/>
+          <include name="test04"/>
+          <include name="test26"/>
+          <include name="test48" invocation-numbers="0 1 2"/>
+          <include name="doBeforeClass"/>
+          <include name="test08"/>
+          <include name="test30"/>
+          <include name="test12"/>
+          <include name="test34"/>
+          <include name="test31"/>
+          <include name="test10"/>
+          <include name="test32"/>
+          <include name="test16"/>
+          <include name="test38"/>
+          <include name="test13"/>
+          <include name="test35"/>
+          <include name="test14"/>
+          <include name="test36"/>
+          <include name="test11"/>
+          <include name="test17"/>
+          <include name="test39"/>
+          <include name="LoginSuccess"/>
+          <include name="test37"/>
+          <include name="test19"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.CustomerManageTestCases -->
+      <class name="com.webtest.ranzhicase.CashAccountTestCases">
+        <methods>
+          <include name="checkaccount"/>
+          <include name="touzi" invocation-numbers="0 1 2 3 4"/>
+          <include name="addspend" invocation-numbers="0 1 2 3 4"/>
+          <include name="testLoginSuccess"/>
+          <include name="demo11"/>
+          <include name="demo22"/>
+          <include name="demo27"/>
+          <include name="demo28"/>
+          <include name="demo29"/>
+          <include name="demo23"/>
+          <include name="demo02"/>
+          <include name="demo24"/>
+          <include name="demo03"/>
+          <include name="doBeforeClass"/>
+          <include name="demo20"/>
+          <include name="testmoney" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.CashAccountTestCases -->
+      <class name="com.webtest.ranzhicase.DailyOfficeTestCases">
+        <methods>
+          <include name="testLoginSuccess"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.DailyOfficeTestCases -->
+      <class name="com.webtest.ranzhicase.BackManageTestCases">
+        <methods>
+          <include name="testAddGroup"/>
+          <include name="testMember"/>
+          <include name="testSending"/>
+          <include name="testBackUp"/>
+          <include name="testXuanxuan"/>
+          <include name="login"/>
+          <include name="atestplan"/>
+          <include name="testMD"/>
+          <include name="testCompany"/>
+          <include name="testApplication"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.BackManageTestCases -->
+      <class name="com.webtest.ranzhicase.MyTerritoryTestCases">
+        <methods>
+          <include name="testLoginSuccess"/>
+          <include name="test12"/>
+          <include name="test13"/>
+          <include name="test35"/>
+          <include name="test14"/>
+          <include name="test36"/>
+          <include name="test15"/>
+          <include name="test10"/>
+          <include name="test11"/>
+          <include name="test16"/>
+          <include name="test17"/>
+          <include name="doBeforeClass"/>
+          <include name="test18"/>
+          <include name="test19"/>
+          <include name="test01"/>
+          <include name="test23"/>
+          <include name="test02"/>
+          <include name="test24"/>
+          <include name="test03"/>
+          <include name="test25"/>
+          <include name="test20"/>
+          <include name="test21"/>
+          <include name="test22"/>
+          <include name="test09"/>
+          <include name="test06"/>
+          <include name="test07"/>
+        </methods>
+      </class> <!-- com.webtest.ranzhicase.MyTerritoryTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

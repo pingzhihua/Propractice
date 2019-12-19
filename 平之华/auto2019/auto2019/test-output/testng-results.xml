@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="43" passed="43">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57743" started-at="2019-12-19T04:47:01Z" finished-at="2019-12-19T04:47:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57743" started-at="2019-12-19T04:47:01Z" finished-at="2019-12-19T04:47:58Z">
+      <class name="com.webtest.ranzhicase.DailyOfficeTestCases">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="doBeforeClass" is-config="true" duration-ms="44912" started-at="2019-12-19T12:47:01Z" finished-at="2019-12-19T12:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testLoginSuccess()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="testLoginSuccess" is-config="true" duration-ms="8338" started-at="2019-12-19T12:47:46Z" finished-at="2019-12-19T12:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method status="PASS" signature="test01()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test01" duration-ms="161" started-at="2019-12-19T12:47:54Z" description="��Ӵ���1" finished-at="2019-12-19T12:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method status="PASS" signature="test02()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test02" duration-ms="96" started-at="2019-12-19T12:47:54Z" description="��Ӵ���2" finished-at="2019-12-19T12:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test03()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test03" duration-ms="59" started-at="2019-12-19T12:47:54Z" description="�������1" finished-at="2019-12-19T12:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="test04()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test04" duration-ms="244" started-at="2019-12-19T12:47:54Z" description="�������2" finished-at="2019-12-19T12:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04 -->
+        <test-method status="PASS" signature="test05()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test05" duration-ms="700" started-at="2019-12-19T12:47:55Z" description="���һ������" finished-at="2019-12-19T12:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05 -->
+        <test-method status="PASS" signature="test06()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test06" duration-ms="44" started-at="2019-12-19T12:47:55Z" description="�鿴����" finished-at="2019-12-19T12:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test06 -->
+        <test-method status="PASS" signature="test07()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test07" duration-ms="100" started-at="2019-12-19T12:47:55Z" description="����" finished-at="2019-12-19T12:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07 -->
+        <test-method status="PASS" signature="test08()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test08" duration-ms="85" started-at="2019-12-19T12:47:55Z" description="������ٺ�����" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test08 -->
+        <test-method status="PASS" signature="test09()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test09" duration-ms="51" started-at="2019-12-19T12:47:56Z" description="ɾ������" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09 -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test10" duration-ms="55" started-at="2019-12-19T12:47:56Z" description="����ͨ��" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test11" duration-ms="74" started-at="2019-12-19T12:47:56Z" description="��������" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test12" duration-ms="105" started-at="2019-12-19T12:47:56Z" description="����Ӱ�" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="test13()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test13" duration-ms="61" started-at="2019-12-19T12:47:56Z" description="��˼Ӱ�" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="test14()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test14" duration-ms="83" started-at="2019-12-19T12:47:56Z" description="�Ӱ�����" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="test15()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test15" duration-ms="138" started-at="2019-12-19T12:47:56Z" description="�������" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="test16()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test16" duration-ms="70" started-at="2019-12-19T12:47:56Z" description="�ҵ����" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="test17()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test17" duration-ms="165" started-at="2019-12-19T12:47:56Z" description="���е���" finished-at="2019-12-19T12:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17 -->
+        <test-method status="PASS" signature="test18()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test18" duration-ms="107" started-at="2019-12-19T12:47:56Z" description="��������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18 -->
+        <test-method status="PASS" signature="test19()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test19" duration-ms="125" started-at="2019-12-19T12:47:57Z" description="����" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test19 -->
+        <test-method status="PASS" signature="test20()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test20" duration-ms="99" started-at="2019-12-19T12:47:57Z" description="���" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test20 -->
+        <test-method status="PASS" signature="test21()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test21" duration-ms="68" started-at="2019-12-19T12:47:57Z" description="����" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21 -->
+        <test-method status="PASS" signature="test22()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test22" duration-ms="82" started-at="2019-12-19T12:47:57Z" description="�ڼ���" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22 -->
+        <test-method status="PASS" signature="test23()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test23" duration-ms="52" started-at="2019-12-19T12:47:57Z" description="����ģ������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test23 -->
+        <test-method status="PASS" signature="test25()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test25" duration-ms="47" started-at="2019-12-19T12:47:57Z" description="��˾��������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test25 -->
+        <test-method status="PASS" signature="test26()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test26" duration-ms="71" started-at="2019-12-19T12:47:57Z" description="���˿�������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test26 -->
+        <test-method status="PASS" signature="test27()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test27" duration-ms="50" started-at="2019-12-19T12:47:57Z" description="���ž�������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test27 -->
+        <test-method status="PASS" signature="test28()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test28" duration-ms="104" started-at="2019-12-19T12:47:57Z" description="�������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test28 -->
+        <test-method status="PASS" signature="test29()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test29" duration-ms="87" started-at="2019-12-19T12:47:57Z" description="��������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test29 -->
+        <test-method status="PASS" signature="test30()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test30" duration-ms="85" started-at="2019-12-19T12:47:57Z" description="��������" finished-at="2019-12-19T12:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test30 -->
+        <test-method status="PASS" signature="test31()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test31" duration-ms="82" started-at="2019-12-19T12:47:57Z" description="�Ӱ�����" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test31 -->
+        <test-method status="PASS" signature="test32()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test32" duration-ms="91" started-at="2019-12-19T12:47:58Z" description="����������" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test32 -->
+        <test-method status="PASS" signature="test33()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test33" duration-ms="71" started-at="2019-12-19T12:47:58Z" description="������Ŀ" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test33 -->
+        <test-method status="PASS" signature="test34()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test34" duration-ms="82" started-at="2019-12-19T12:47:58Z" description="��˭����" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test34 -->
+        <test-method status="PASS" signature="test35()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test35" duration-ms="66" started-at="2019-12-19T12:47:58Z" description="�����˻�" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test35 -->
+        <test-method status="PASS" signature="test36()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test36" duration-ms="58" started-at="2019-12-19T12:47:58Z" description="����--����--������Ŀ" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test36 -->
+        <test-method status="PASS" signature="test37()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test37" duration-ms="67" started-at="2019-12-19T12:47:58Z" description="����--����--������" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test37 -->
+        <test-method status="PASS" signature="test38()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test38" duration-ms="89" started-at="2019-12-19T12:47:58Z" description="����--����--�����˻�" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test38 -->
+        <test-method status="PASS" signature="test39()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test39" duration-ms="58" started-at="2019-12-19T12:47:58Z" description="����--����--��˭����" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test39 -->
+        <test-method status="PASS" signature="test40()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test40" duration-ms="63" started-at="2019-12-19T12:47:58Z" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test40 -->
+        <test-method status="PASS" signature="test41()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test41" duration-ms="53" started-at="2019-12-19T12:47:58Z" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test41 -->
+        <test-method status="PASS" signature="test42()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test42" duration-ms="59" started-at="2019-12-19T12:47:58Z" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test42 -->
+        <test-method status="PASS" signature="test43()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test43" duration-ms="57" started-at="2019-12-19T12:47:58Z" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test43 -->
+        <test-method status="PASS" signature="test44()[pri:0, instance:com.webtest.ranzhicase.DailyOfficeTestCases@6fffcba5]" name="test44" duration-ms="55" started-at="2019-12-19T12:47:58Z" description="�ڼ���" finished-at="2019-12-19T12:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test44 -->
+      </class> <!-- com.webtest.ranzhicase.DailyOfficeTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
