@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import net.sf.json.JSONObject;
-
+/**
+ * 
+ * @author jishanshan
+ *
+ */
 @RestController
 public class NewController {
 	Cookie cookie;

@@ -3,7 +3,11 @@ package com.edu.qingguo;
 import org.testng.annotations.Test;
 
 import com.edu.core.HttpDriver;
-
+/**
+ * 
+ * @author yanghuijie
+ *
+ */
 public class AddressListTest {
 	String address_url = "/fgadmin/address/list";
 

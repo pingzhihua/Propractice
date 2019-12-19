@@ -5,7 +5,11 @@ import org.testng.annotations.Test;
 import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
 import net.sf.json.JSONObject;
-
+/**
+ * 
+ * @author ¼½ÉºÉº
+ *
+ */
 public class AllTest {
 	String login_url = "/common/fgadmin/login";
 	String list_url = "/common/skuList";

@@ -4,7 +4,11 @@ import org.testng.annotations.Test;
 
 import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
-
+/**
+ * 
+ * @author jishanshan
+ *
+ */
 public class SkulistTest {
 	String list_url = "/common/skuList";
 	Checker check = null;

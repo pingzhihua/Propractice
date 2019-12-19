@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import net.sf.json.JSONObject;
+/**
+ * 
+ * @author jishanshan
+ *
+ */
+
 @RestController
 public class DeleteController {
 	Cookie cookie;
@@ -20,13 +26,13 @@ public class DeleteController {
 		String id = jsonParam.getString("id");
 		String login = jsonParam.getString("login");
 		JSONObject result = new JSONObject();
-		if(login.equals("true")){
-			if (id.trim().toString()!=null) {
+		if (login.equals("true")) {
+			if (id.trim().toString() != null) {
 				result.element("message", "success");
 			} else {
 				result.element("message", "fail");
 			}
-		}else{
+		} else {
 			result.element("message", "请先登录！");
 		}
 		return result;

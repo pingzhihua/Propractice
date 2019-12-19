@@ -42,3 +42,4 @@
 [FATAL] 2019-12-19 09:36:20,231 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
 [FATAL] 2019-12-19 09:36:44,108 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
 [FATAL] 2019-12-19 09:38:12,705 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail
+[FATAL] 2019-12-19 15:44:04,802 com.edu.utils.Log - expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail

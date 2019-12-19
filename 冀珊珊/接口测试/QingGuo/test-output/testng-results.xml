@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="663" started-at="2019-12-19T01:38:12Z" finished-at="2019-12-19T01:38:12Z">
+  <suite name="Default suite" duration-ms="1890" started-at="2019-12-19T07:44:02Z" finished-at="2019-12-19T07:44:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="663" started-at="2019-12-19T01:38:12Z" finished-at="2019-12-19T01:38:12Z">
+    <test name="Default test" duration-ms="1890" started-at="2019-12-19T07:44:02Z" finished-at="2019-12-19T07:44:04Z">
       <class name="com.edu.qingguo.AllTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="test1" duration-ms="317" started-at="2019-12-19T09:38:12Z" description="获取所有商品列表成功" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="test1" duration-ms="964" started-at="2019-12-19T15:44:02Z" description="获取所有商品列表成功" finished-at="2019-12-19T15:44:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="testDeleteFail()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testDeleteFail" duration-ms="12" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testDeleteFail()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testDeleteFail" duration-ms="151" started-at="2019-12-19T15:44:03Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteFail -->
-        <test-method status="PASS" signature="testDeleteSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testDeleteSuccess" duration-ms="6" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testDeleteSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testDeleteSuccess" duration-ms="13" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteSuccess -->
-        <test-method status="PASS" signature="testGetAddress()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testGetAddress" duration-ms="6" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testGetAddress()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testGetAddress" duration-ms="18" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAddress -->
-        <test-method status="PASS" signature="testGetFee()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testGetFee" duration-ms="6" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testGetFee()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testGetFee" duration-ms="15" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetFee -->
-        <test-method status="PASS" signature="testLoginForWrongNumber()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginForWrongNumber" duration-ms="264" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testLoginForWrongNumber()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginForWrongNumber" duration-ms="632" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginForWrongNumber -->
-        <test-method status="FAIL" signature="testLoginForWrongPhone()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginForWrongPhone" duration-ms="12" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="FAIL" signature="testLoginForWrongPhone()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginForWrongPhone" duration-ms="24" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[expectedValue doesn't match actualValue,actual Value is :success; expected Value is :fail]]>
@@ -71,19 +71,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginForWrongPhone -->
-        <test-method status="PASS" signature="testLoginSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginSuccess" duration-ms="5" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testLoginSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testLoginSuccess" duration-ms="8" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginSuccess -->
-        <test-method status="PASS" signature="testNewFail()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testNewFail" duration-ms="5" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testNewFail()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testNewFail" duration-ms="10" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNewFail -->
-        <test-method status="PASS" signature="testNewSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testNewSuccess" duration-ms="5" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testNewSuccess()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testNewSuccess" duration-ms="13" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNewSuccess -->
-        <test-method status="PASS" signature="testSubmit()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testSubmit" duration-ms="6" started-at="2019-12-19T09:38:12Z" finished-at="2019-12-19T09:38:12Z">
+        <test-method status="PASS" signature="testSubmit()[pri:0, instance:com.edu.qingguo.AllTest@1fbc7afb]" name="testSubmit" duration-ms="11" started-at="2019-12-19T15:44:04Z" finished-at="2019-12-19T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubmit -->

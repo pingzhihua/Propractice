@@ -6,7 +6,11 @@ import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
 
 import net.sf.json.JSONObject;
-
+/**
+ * 
+ * @author jishanshan
+ *
+ */
 //@Listeners(ApiListener.class)
 public class LoginTest {
 	String login_url = "/common/fgadmin/login";

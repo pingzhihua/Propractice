@@ -5,7 +5,11 @@ import org.testng.annotations.Test;
 import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
 import net.sf.json.JSONObject;
-
+/**
+ * 
+ * @author jishanshan
+ *
+ */
 public class NewAddressTest {
 	String address_list = "/common/fgadmin/address/new";
 

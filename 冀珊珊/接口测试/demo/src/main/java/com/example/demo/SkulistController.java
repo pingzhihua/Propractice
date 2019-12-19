@@ -4,10 +4,12 @@ import java.util.Map;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import net.sf.json.JSONObject;
+/**
+ * 
+ * @author jishanshan
+ *
+ */
 @RestController
 public class SkulistController {
 	@RequestMapping(value="/common/skuList",method=RequestMethod.GET)

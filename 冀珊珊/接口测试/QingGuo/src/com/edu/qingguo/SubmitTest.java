@@ -5,7 +5,11 @@ import org.testng.annotations.Test;
 import com.edu.core.HttpDriver;
 import com.edu.utils.Checker;
 import net.sf.json.JSONObject;
-
+/**
+ * 
+ * @author yanghuijie
+ *
+ */
 public class SubmitTest {
 
 	String submit_url = "/fgadmin/orders/submit";

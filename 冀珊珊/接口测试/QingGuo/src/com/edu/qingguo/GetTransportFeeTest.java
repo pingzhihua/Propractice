@@ -3,7 +3,11 @@ package com.edu.qingguo;
 import org.testng.annotations.Test;
 
 import com.edu.core.HttpDriver;
-
+/**
+ * 
+ * @author yanghuijie
+ *
+ */
 public class GetTransportFeeTest {
 	String getfee_url = "/common/getTransportFee";
 
