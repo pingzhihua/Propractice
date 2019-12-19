@@ -1,0 +1,31 @@
+package com.edu.qingguo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.http.client.CookieStore;
+import org.testng.annotations.Test;
+
+import com.edu.core.HttpDriver;
+import com.edu.utils.Common;
+import com.sun.jna.platform.unix.solaris.LibKstat.KstatNamed.UNION.STR;
+
+import net.sf.json.JSONObject;
+
+public class GetTransportFee {
+	String fee_url="/common/getTransportFee";
+	@Test
+	public void getFee(){
+		CookieStore cookieStore=Common.getCookie("20000000005", "netease123");
+		JSONObject para=new JSONObject();
+		Map<String, Object> fee_para=new HashMap<String, Object>();
+		fee_para.put("id", "1");
+		String province = SkulistTest1.class.getString("province");
+		String city = SkulistTest1.class.getString("city");
+		String area = SkulistTest1.class.getString("area");
+		fee_para.put("addressDetail",province+"_"+city+"_"+area);
+		String fee_result=HttpDriver.doGet(fee_url, fee_para,cookie);
+		System.out.println(fee_result);
+	}
+	
+}
